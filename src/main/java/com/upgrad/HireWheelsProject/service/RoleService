@@ -1,0 +1,9 @@
+package com.upgrad.HireWheelsProject.service;
+
+import com.upgrad.HireWheelsProject.entities.Role;
+import com.upgrad.HireWheelsProject.exception.UserRoleNotFoundException;
+
+public interface RoleService {
+    Role acceptRoleDetails(Role Role);
+    Role findRoleDetails(int RoleId) throws UserRoleNotFoundException;
+}
